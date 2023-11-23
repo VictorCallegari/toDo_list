@@ -44,4 +44,4 @@ Clone o repositório para o seu computador:
   - Logue a tarefa diretamente após a edição para melhorar a visibilidade.
     
 # Licença
-Este projeto está licenciado sob a Licença MIT. Sinta-se à vontade para usá-lo e modificá-lo conforme suas necessidades.
+Este projeto está licenciado sob a [Licença MIT](https://github.com/VictorCallegari/toDo_list/blob/master/LICENSE). Sinta-se à vontade para usá-lo e modificá-lo conforme suas necessidades.
