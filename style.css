@@ -140,3 +140,21 @@ input, textarea {
     background-color: green;
     color: #ffffff;
 }
+
+/*Estilização de botões de tarefa*/
+
+.btnTarefaConcluida{
+    background-color: green;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.btnTarefaEditar{
+    background-color: #FDFD96;
+    cursor: pointer;
+}
+
+.btnTarefaEcluir{
+    background-color: #feafab;
+    cursor: pointer;
+}

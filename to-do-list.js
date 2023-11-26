@@ -65,9 +65,9 @@ document.addEventListener('DOMContentLoaded', function () { //script seja execut
                         <li>Tarefa: ${tarefas.tarefa} </li>
                     </ul>
                     <section id="listaBTN">
-                        <button id="tarefaConcluida_${id}">Tarefa concluída</button>
-                        <button id="editarTarefa_${id}">Editar</button>
-                        <button id="excluirTarefa_${id}">Excluir</button>
+                        <button id="tarefaConcluida_${id}" class="btnTarefaConcluida">Tarefa concluída</button>
+                        <button id="editarTarefa_${id}" class="btnTarefaEditar">Editar</button>
+                        <button id="excluirTarefa_${id}" class="btnTarefaEcluir">Excluir</button>
                     </section> 
                 </div>   
                 <hr>`;
