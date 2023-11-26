@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="./to-do-list.js" defer></script>
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <header>
+        <!-- Área do header-->
+        <h1>
+            TO DO LIST:
+        </h1>
+
+        <section class="sectionHeaderTarefas">
+            
+            <div class="areaCriarTarefa">
+                <h1>                    
+                    Tarefas: 
+                </h1>
+                <button id="adicionarTarefa">+</button> <!-- Botão de adiconar tarefa-->
+            </div>
+            <div class="areaBusca">
+                <label for="procurarPorID">Pesquisar por ID: </label>
+                <input type="search" name="procurarPorID" id="procurarPorID">
+                <button id="procurar"> <!-- Botão para chamar a função de busca-->
+                    <img src="./images/3d-lupa.png" alt="">
+                </button>
+            </div>
+        </section>
+    </header>
+    
+    <main>
+        <section id="formAdicionarTarefa"> <!-- Formulário para adicionar tarefas. Fica escondido quando não chamado-->
+            <h1 class="textoArea">
+                Adicionar Tarefa
+            </h1>
+            <form action="" class="formularioAdicionar">
+                <div class="inputForm">
+                    <label for="inputId">Id:</label>
+                    <input type="number" name="inputId" id="inputId" max="999" >
+                </div>
+                <div class="inputForm">
+                    <label for="inputTitulo">Título:</label>
+                    <input type="text" id="inputTitulo">
+                </div>
+                <div class="inputForm">
+                    <label for="inputData">Data:</label>
+                    <input type="date" name="inputData" id="inputData">
+                </div>
+                <div class="inputForm">
+                    <label for="inputTarefa">Tarefa:</label>
+                    <textarea name="inputTarefa" id="inputTarefa" cols="30" rows="5"></textarea>
+                </div>
+                <div class="inputForm">
+                    <input type="button" value="Salvar" id="enviarTarefa" class="enviarTarefacss">
+                </div>
+            </form>  
+        </section>
+
+        <section id="formEditarTarefa"> <!-- Formulário para editar tarefas. Fica escondido quando não chamado-->
+            <h1 class="textoArea">
+                Editar Tarefa
+            </h1>
+            <form action="">
+                <div class="inputForm">
+                    <label for="editInputId">Id:</label>
+                    <input type="number" name="editInputId" id="editInputId" max="999" readonly>
+                </div>
+                <div class="inputForm">
+                    <label for="editInputTitulo">Título:</label>
+                    <input type="text" id="editInputTitulo">
+                </div>
+                <div class="inputForm">
+                    <label for="editInputData">Data:</label>
+                    <input type="date" name="editInputData" id="editInputData">
+                </div>
+                <div class="inputForm">
+                    <label for="editInputTarefa">Tarefa:</label>
+                    <textarea name="editInputTarefa" id="editInputTarefa" cols="30" rows="5"></textarea>
+                </div>
+                <div class="inputForm">
+                    <input type="button" value="Salvar" id="salvarEdicao" class="enviarTarefacss">
+                </div>
+            </form>
+        </section> 
+
+        <section id="areaTarefa">            
+            <div id="listaTarefas"></div> <!-- área que será adicionado as tarefas através do JS-->
+        </section>
+       
+    </main>
+</body>
+</html>

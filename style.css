@@ -1,0 +1,142 @@
+*{
+    width: none;
+    height: none;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #faebd7;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Edição da área header*/
+
+.sectionHeaderTarefas{
+    display: flex;
+    background-color: #feafab;
+    align-items: center;
+    gap: 15px;
+    margin: 0 5%;
+}
+
+.areaCriarTarefa{
+    display: flex;
+    align-items: center;
+}
+
+#adicionarTarefa{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-radius: 300px;
+    font-size: 10vh;
+    background-color: green;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#adicionarTarefa:hover{
+   background-color: rgba(0, 128, 0, 0.829);
+}
+
+#procurar{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-radius: 300px;
+    font-size: 10vh;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#procurar img{
+    height: 5vh;
+}
+
+#procurarPorID{
+    height: 20px;
+}
+
+
+.areaCriarTarefa{
+    display: flex;
+}
+
+.areaBusca{
+    display: flex;
+    align-items: center;
+    margin: 0 5%;
+    gap: 15px;
+}
+
+/*Edição de informaçções de tarefas*/
+
+#areaDeTarefas{
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+    padding: 5px;
+    border:2px solid #feafab96;
+    border-style:ridge;
+    box-shadow: 5px 10px grey;
+}
+
+/* Edição da lista de tarefas */
+#listaTarefas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Alinha as tarefas horizontalmente */
+    gap: 10px; /* Espaço entre as tarefas */
+    padding: 20px;
+}
+
+/* Edição de formulário de adicionar e editar tarefas */
+#areaTarefa {
+    width: 100%;
+    padding: 5vh;
+    box-sizing: border-box;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 2vh;
+}
+
+#formAdicionarTarefa{
+    background-color: #FDFD96;
+    display: flex;
+    padding: 5vh;
+}
+
+#formEditarTarefa{
+    background-color: #b2e2f2;
+    display: block;
+    padding: 5vh;
+}
+
+.textoArea{
+    text-align: center;
+}
+
+.inputForm{
+    margin-bottom: 2vh;
+}
+
+#inputId, #editInputId, #procurarPorID{
+    width: 10vh;
+}
+
+.enviarTarefacss{
+    width: 10vh;
+    height: auto;
+    background-color: green;
+    color: #ffffff;
+}
